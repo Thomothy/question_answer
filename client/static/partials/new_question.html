@@ -1,0 +1,27 @@
+<div ng-controller="questionsController">
+	<br>
+	<a href="" ng-click="logout()">Logout</a>
+	<h3>New Question</h3>
+	<form ng-submit="addQuestion(newQuestion)">
+		<label>Question: </label>
+		<textarea ng-model="newQuestion.question" rows="8" cols="40"></textarea>
+		<label>Description:</label> <textarea ng-model="newQuestion.description" rows="8" cols="40"></textarea>
+		<button>Submit Question</button>
+	</form>
+</div>
+
+<!-- <h1>Question</h1>
+	<div ng-controller="questionsController">
+		<table id="questionsTable">
+			<tr>
+				<th>Question</th>
+				<th>Answers</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td>{{data.question}}</td>
+				<td>{{question.category}}</td>
+				<td>{{question.upvote}}</td>
+			</tr>
+		</table>
+	</div> -->

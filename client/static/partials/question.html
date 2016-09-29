@@ -1,0 +1,18 @@
+<div ng-controller="questionsController">
+<br>
+<a href="" ng-click="logout()">Logout</a>
+
+<h3>Question</h3>
+		<table id="questionsTable">
+			<tr>
+				<th>Question</th>
+				<th>Answers</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td>{{question.data.question}}</td>
+				<td>{{question.category}}</td>
+				<td>{{question.upvote}}</td>
+			</tr>
+		</table>
+</div>

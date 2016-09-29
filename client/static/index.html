@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app="appName">
+<head>
+	<meta charset="UTF-8">
+	<title>Question and Answer</title>
+	<script src="/angular/angular.min.js"></script>
+	<script src="/angular/angular-route.min.js"></script>
+	<script src="/app.js"></script>
+	<script src="/factories/questionFactory.js"></script>
+	<script src="/factories/userFactory.js"></script>
+	<!-- 	<script src="/controllers/ordersController.js"></script> -->
+	<script src="/controllers/questionsController.js"></script>
+	<!--	<script src="/controllers/editProductsController.js"></script> -->
+	<script src="/controllers/usersController.js"></script>
+	<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<style type="text/css">
+				*{
+					font-family: geneva;
+				}
+				.container {
+					width: 600px;
+					margin: auto;
+					/*border: 1px solid;*/
+				}
+				input, textarea{
+					display: block;
+					margin-bottom: 2em;
+				}
+				.right {
+					margin-left: 530px;
+				}
+				.header a {
+					padding-left: 20px;
+				}
+	</style>
+</head>
+<body>
+	<div class="container">
+			<div class="header">
+				<a href="#/dashboard">Home</a>
+				<a href="#/questions">Dashboard</a>
+				<a href="#/login">Login</a>
+			</div>
+			<div ng-view="">
+			</div>
+	</div>
+</body>
+</html>

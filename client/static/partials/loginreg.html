@@ -1,0 +1,18 @@
+<form ng-submit="create(user)">
+    <fieldset>
+        <legend>Register</legend>
+        <label>Username<input type="text" ng-model="user.username"></label>
+        <label>PW<input type="text" ng-model="user.password"></label>
+        <label>PW confirm<input type="text" ng-model="user.pw_confirm"></label>
+        <button>Submit</button>
+    </fieldset>
+</form>
+
+<form ng-submit="login(loginUser)">
+    <fieldset>
+        <legend>Login</legend>
+        <label>Username<input type="text" ng-model="loginUser.username"></label>
+        <label>PW<input type="text" ng-model="loginUser.password"></label>
+        <button>Submit</button>
+    </fieldset>
+</form>
